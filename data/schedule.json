@@ -1,0 +1,1897 @@
+{
+	"tournamentId" : {
+		"name" : "cwc-2015",
+		"id" : 868
+	},
+	"schedule" : [{
+			"description" : "Match 1",
+			"matchId" : {
+				"name" : "cwc-2015-01",
+				"id" : 883
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 89,
+				"country" : "New Zealand",
+				"fullName" : "Hagley Oval",
+				"shortName" : "Hagley Oval",
+				"city" : "Christchurch"
+			},
+			"matchDate" : "2015-02-14T11:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Sri Lanka",
+					"shortName" : "Sri Lanka",
+					"abbreviation" : "SL",
+					"primaryColor" : "02ABDC",
+					"secondaryColor" : "737D1D",
+					"id" : 13
+				},
+				"innings" : [{
+						"inningsNumber" : 2,
+						"runs" : 233,
+						"ballsFaced" : 277,
+						"wkts" : 10,
+						"allOut" : true,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "New Zealand",
+					"shortName" : "New Zealand",
+					"abbreviation" : "NZ",
+					"primaryColor" : "012247",
+					"secondaryColor" : "FAFAFA",
+					"id" : 16
+				},
+				"innings" : [{
+						"inningsNumber" : 1,
+						"runs" : 331,
+						"ballsFaced" : 300,
+						"wkts" : 6,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"matchState" : "C",
+			"matchStatus" : {
+				"text" : "New Zealand won by 98 runs",
+				"outcome" : "B"
+			},
+			"reportLink" : "http://www.icc-cricket.com/cricket-world-cup/news/2015/news/85596/all-round-new-zealand-pockets-98-run-win"
+		}, {
+			"description" : "Match 2",
+			"matchId" : {
+				"name" : "cwc-2015-02",
+				"id" : 884
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 51,
+				"country" : "Australia",
+				"fullName" : "Melbourne Cricket Ground",
+				"shortName" : "MCG",
+				"city" : "Melbourne"
+			},
+			"matchDate" : "2015-02-14T14:30:00+1100",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "England",
+					"shortName" : "England",
+					"abbreviation" : "ENG",
+					"primaryColor" : "023B7A",
+					"secondaryColor" : "E62102",
+					"id" : 11
+				},
+				"innings" : [{
+						"inningsNumber" : 2,
+						"runs" : 231,
+						"ballsFaced" : 251,
+						"wkts" : 10,
+						"allOut" : true,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Australia",
+					"shortName" : "Australia",
+					"abbreviation" : "AUS",
+					"primaryColor" : "7DBD18",
+					"secondaryColor" : "D6CF00",
+					"id" : 15
+				},
+				"innings" : [{
+						"inningsNumber" : 1,
+						"runs" : 342,
+						"ballsFaced" : 300,
+						"wkts" : 9,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"matchState" : "C",
+			"matchStatus" : {
+				"text" : "Australia won by 111 runs",
+				"outcome" : "B"
+			},
+			"reportLink" : "http://www.icc-cricket.com/cricket-world-cup/news/2015/news/85610/finch-marsh-star-in-big-australia-win",
+			"photostreamLink" : "http://www.icc-cricket.com/cricket-world-cup/photos/3638/icc-world-cup-2015-match-2-australia-v-england"
+		}, {
+			"description" : "Match 3",
+			"matchId" : {
+				"name" : "cwc-2015-03",
+				"id" : 885
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 95,
+				"country" : "New Zealand",
+				"fullName" : "Seddon Park",
+				"shortName" : "Seddon Park",
+				"city" : "Hamilton"
+			},
+			"matchDate" : "2015-02-15T14:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "South Africa",
+					"shortName" : "South Africa",
+					"abbreviation" : "SA",
+					"primaryColor" : "FFCD00",
+					"secondaryColor" : "0E4D05",
+					"id" : 19
+				},
+				"innings" : [{
+						"inningsNumber" : 1,
+						"runs" : 339,
+						"ballsFaced" : 300,
+						"wkts" : 4,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Zimbabwe",
+					"shortName" : "Zimbabwe",
+					"abbreviation" : "ZIM",
+					"primaryColor" : "546C87",
+					"secondaryColor" : "FF0000",
+					"id" : 18
+				},
+				"innings" : [{
+						"inningsNumber" : 2,
+						"runs" : 277,
+						"ballsFaced" : 290,
+						"wkts" : 10,
+						"allOut" : true,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"matchState" : "C",
+			"matchStatus" : {
+				"text" : "South Africa won by 62 runs",
+				"outcome" : "A"
+			},
+			"reportLink" : "http://www.icc-cricket.com/cricket-world-cup/news/2015/news/85663/millier-duminy-star-with-tons-in-south-africa-win"
+		}, {
+			"description" : "Match 4",
+			"matchId" : {
+				"name" : "cwc-2015-04",
+				"id" : 886
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 42,
+				"country" : "Australia",
+				"fullName" : "Adelaide Oval",
+				"shortName" : "Adelaide Oval",
+				"city" : "Adelaide"
+			},
+			"matchDate" : "2015-02-15T14:00:00+1030",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "India",
+					"shortName" : "India",
+					"abbreviation" : "IND",
+					"primaryColor" : "FD6205",
+					"secondaryColor" : "3A5BFD",
+					"id" : 14
+				},
+				"innings" : [{
+						"inningsNumber" : 1,
+						"runs" : 300,
+						"ballsFaced" : 300,
+						"wkts" : 7,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Pakistan",
+					"shortName" : "Pakistan",
+					"abbreviation" : "PAK",
+					"primaryColor" : "084B01",
+					"secondaryColor" : "4B4407",
+					"id" : 20
+				},
+				"innings" : [{
+						"inningsNumber" : 2,
+						"runs" : 224,
+						"ballsFaced" : 282,
+						"wkts" : 10,
+						"allOut" : true,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"matchState" : "C",
+			"matchStatus" : {
+				"text" : "India won by 76 runs",
+				"outcome" : "A"
+			},
+			"reportLink" : "http://www.icc-cricket.com/cricket-world-cup/news/2015/news/85676/high-flying-india-cruises-to-victory"
+		}, {
+			"description" : "Match 5",
+			"matchId" : {
+				"name" : "cwc-2015-05",
+				"id" : 887
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 93,
+				"country" : "New Zealand",
+				"fullName" : "Saxton Oval",
+				"shortName" : "Saxton Oval",
+				"city" : "Nelson"
+			},
+			"matchDate" : "2015-02-16T11:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "West Indies",
+					"shortName" : "West Indies",
+					"abbreviation" : "WI",
+					"primaryColor" : "8C0253",
+					"secondaryColor" : "5C1515",
+					"id" : 21
+				},
+				"innings" : [{
+						"inningsNumber" : 1,
+						"runs" : 304,
+						"ballsFaced" : 300,
+						"wkts" : 7,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Ireland",
+					"shortName" : "Ireland",
+					"abbreviation" : "IRE",
+					"primaryColor" : "467101",
+					"secondaryColor" : "FFFFFF",
+					"id" : 12
+				},
+				"innings" : [{
+						"inningsNumber" : 2,
+						"runs" : 307,
+						"ballsFaced" : 275,
+						"wkts" : 6,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"matchState" : "C",
+			"matchStatus" : {
+				"text" : "Ireland won by 4 wickets",
+				"outcome" : "B"
+			},
+			"reportLink" : "http://www.icc-cricket.com/cricket-world-cup/news/2015/news/85709/ireland-starts-party-with-memorable-win"
+		}, {
+			"description" : "Match 6",
+			"matchId" : {
+				"name" : "cwc-2015-06",
+				"id" : 888
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 94,
+				"country" : "New Zealand",
+				"fullName" : "University Oval",
+				"shortName" : "Uni Oval",
+				"city" : "Dunedin"
+			},
+			"matchDate" : "2015-02-17T11:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "New Zealand",
+					"shortName" : "New Zealand",
+					"abbreviation" : "NZ",
+					"primaryColor" : "012247",
+					"secondaryColor" : "FAFAFA",
+					"id" : 16
+				},
+				"innings" : [{
+						"inningsNumber" : 2,
+						"runs" : 146,
+						"ballsFaced" : 149,
+						"wkts" : 7,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Scotland",
+					"shortName" : "Scotland",
+					"abbreviation" : "SCO",
+					"primaryColor" : "003777",
+					"secondaryColor" : "FFFFFF",
+					"id" : 69
+				},
+				"innings" : [{
+						"inningsNumber" : 1,
+						"runs" : 142,
+						"ballsFaced" : 218,
+						"wkts" : 10,
+						"allOut" : true,
+						"maxBalls" : 300
+					}
+				]
+			},
+			"matchState" : "C",
+			"matchStatus" : {
+				"text" : "New Zealand won by 3 wickets",
+				"outcome" : "A"
+			},
+			"reportLink" : "http://www.icc-cricket.com/cricket-world-cup/news/2015/news/85755/new-zealand-quells-scotland-challenge-in-tricky-chase"
+		}, {
+			"description" : "Match 7",
+			"matchId" : {
+				"name" : "cwc-2015-07",
+				"id" : 889
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 58,
+				"country" : "Australia",
+				"fullName" : "Manuka Oval",
+				"shortName" : "Manuka Oval",
+				"city" : "Canberra"
+			},
+			"matchDate" : "2015-02-18T14:30:00+1100",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Bangladesh",
+					"shortName" : "Bangladesh",
+					"abbreviation" : "BAN",
+					"primaryColor" : "04A093",
+					"secondaryColor" : "04A093",
+					"id" : 22
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Afghanistan",
+					"shortName" : "Afghanistan",
+					"abbreviation" : "AFG",
+					"primaryColor" : "000000",
+					"secondaryColor" : "000000",
+					"id" : 17
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 8",
+			"matchId" : {
+				"name" : "cwc-2015-08",
+				"id" : 890
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 93,
+				"country" : "New Zealand",
+				"fullName" : "Saxton Oval",
+				"shortName" : "Saxton Oval",
+				"city" : "Nelson"
+			},
+			"matchDate" : "2015-02-19T11:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Zimbabwe",
+					"shortName" : "Zimbabwe",
+					"abbreviation" : "ZIM",
+					"primaryColor" : "546C87",
+					"secondaryColor" : "FF0000",
+					"id" : 18
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "United Arab Emirates",
+					"shortName" : "UAE",
+					"abbreviation" : "UAE",
+					"primaryColor" : "CE963F",
+					"secondaryColor" : "FFFFFF",
+					"id" : 155
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 9",
+			"matchId" : {
+				"name" : "cwc-2015-09",
+				"id" : 891
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 92,
+				"country" : "New Zealand",
+				"fullName" : "Wellington Regional Stadium",
+				"shortName" : "Wellington Regional Stadium",
+				"city" : "Wellington"
+			},
+			"matchDate" : "2015-02-20T14:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "England",
+					"shortName" : "England",
+					"abbreviation" : "ENG",
+					"primaryColor" : "023B7A",
+					"secondaryColor" : "E62102",
+					"id" : 11
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "New Zealand",
+					"shortName" : "New Zealand",
+					"abbreviation" : "NZ",
+					"primaryColor" : "012247",
+					"secondaryColor" : "FAFAFA",
+					"id" : 16
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 10",
+			"matchId" : {
+				"name" : "cwc-2015-10",
+				"id" : 892
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 89,
+				"country" : "New Zealand",
+				"fullName" : "Hagley Oval",
+				"shortName" : "Hagley Oval",
+				"city" : "Christchurch"
+			},
+			"matchDate" : "2015-02-21T11:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Pakistan",
+					"shortName" : "Pakistan",
+					"abbreviation" : "PAK",
+					"primaryColor" : "084B01",
+					"secondaryColor" : "4B4407",
+					"id" : 20
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "West Indies",
+					"shortName" : "West Indies",
+					"abbreviation" : "WI",
+					"primaryColor" : "8C0253",
+					"secondaryColor" : "5C1515",
+					"id" : 21
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 11",
+			"matchId" : {
+				"name" : "cwc-2015-11",
+				"id" : 893
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 41,
+				"country" : "Australia",
+				"fullName" : "The Gabba",
+				"shortName" : "Brisbane Cricket Ground",
+				"city" : "Brisbane"
+			},
+			"matchDate" : "2015-02-21T13:30:00+1000",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Australia",
+					"shortName" : "Australia",
+					"abbreviation" : "AUS",
+					"primaryColor" : "7DBD18",
+					"secondaryColor" : "D6CF00",
+					"id" : 15
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Bangladesh",
+					"shortName" : "Bangladesh",
+					"abbreviation" : "BAN",
+					"primaryColor" : "04A093",
+					"secondaryColor" : "04A093",
+					"id" : 22
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 12",
+			"matchId" : {
+				"name" : "cwc-2015-12",
+				"id" : 894
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 94,
+				"country" : "New Zealand",
+				"fullName" : "University Oval",
+				"shortName" : "Uni Oval",
+				"city" : "Dunedin"
+			},
+			"matchDate" : "2015-02-22T11:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Sri Lanka",
+					"shortName" : "Sri Lanka",
+					"abbreviation" : "SL",
+					"primaryColor" : "02ABDC",
+					"secondaryColor" : "737D1D",
+					"id" : 13
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Afghanistan",
+					"shortName" : "Afghanistan",
+					"abbreviation" : "AFG",
+					"primaryColor" : "000000",
+					"secondaryColor" : "000000",
+					"id" : 17
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 13",
+			"matchId" : {
+				"name" : "cwc-2015-13",
+				"id" : 895
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 51,
+				"country" : "Australia",
+				"fullName" : "Melbourne Cricket Ground",
+				"shortName" : "MCG",
+				"city" : "Melbourne"
+			},
+			"matchDate" : "2015-02-22T14:30:00+1100",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "South Africa",
+					"shortName" : "South Africa",
+					"abbreviation" : "SA",
+					"primaryColor" : "FFCD00",
+					"secondaryColor" : "0E4D05",
+					"id" : 19
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "India",
+					"shortName" : "India",
+					"abbreviation" : "IND",
+					"primaryColor" : "FD6205",
+					"secondaryColor" : "3A5BFD",
+					"id" : 14
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 14",
+			"matchId" : {
+				"name" : "cwc-2015-14",
+				"id" : 896
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 89,
+				"country" : "New Zealand",
+				"fullName" : "Hagley Oval",
+				"shortName" : "Hagley Oval",
+				"city" : "Christchurch"
+			},
+			"matchDate" : "2015-02-23T11:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "England",
+					"shortName" : "England",
+					"abbreviation" : "ENG",
+					"primaryColor" : "023B7A",
+					"secondaryColor" : "E62102",
+					"id" : 11
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Scotland",
+					"shortName" : "Scotland",
+					"abbreviation" : "SCO",
+					"primaryColor" : "003777",
+					"secondaryColor" : "FFFFFF",
+					"id" : 69
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 15",
+			"matchId" : {
+				"name" : "cwc-2015-15",
+				"id" : 897
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 58,
+				"country" : "Australia",
+				"fullName" : "Manuka Oval",
+				"shortName" : "Manuka Oval",
+				"city" : "Canberra"
+			},
+			"matchDate" : "2015-02-24T14:30:00+1100",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "West Indies",
+					"shortName" : "West Indies",
+					"abbreviation" : "WI",
+					"primaryColor" : "8C0253",
+					"secondaryColor" : "5C1515",
+					"id" : 21
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Zimbabwe",
+					"shortName" : "Zimbabwe",
+					"abbreviation" : "ZIM",
+					"primaryColor" : "546C87",
+					"secondaryColor" : "FF0000",
+					"id" : 18
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 16",
+			"matchId" : {
+				"name" : "cwc-2015-16",
+				"id" : 898
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 41,
+				"country" : "Australia",
+				"fullName" : "The Gabba",
+				"shortName" : "Brisbane Cricket Ground",
+				"city" : "Brisbane"
+			},
+			"matchDate" : "2015-02-25T13:30:00+1000",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Ireland",
+					"shortName" : "Ireland",
+					"abbreviation" : "IRE",
+					"primaryColor" : "467101",
+					"secondaryColor" : "FFFFFF",
+					"id" : 12
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "United Arab Emirates",
+					"shortName" : "UAE",
+					"abbreviation" : "UAE",
+					"primaryColor" : "CE963F",
+					"secondaryColor" : "FFFFFF",
+					"id" : 155
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 17",
+			"matchId" : {
+				"name" : "cwc-2015-17",
+				"id" : 899
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 94,
+				"country" : "New Zealand",
+				"fullName" : "University Oval",
+				"shortName" : "Uni Oval",
+				"city" : "Dunedin"
+			},
+			"matchDate" : "2015-02-26T11:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Afghanistan",
+					"shortName" : "Afghanistan",
+					"abbreviation" : "AFG",
+					"primaryColor" : "000000",
+					"secondaryColor" : "000000",
+					"id" : 17
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Scotland",
+					"shortName" : "Scotland",
+					"abbreviation" : "SCO",
+					"primaryColor" : "003777",
+					"secondaryColor" : "FFFFFF",
+					"id" : 69
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 18",
+			"matchId" : {
+				"name" : "cwc-2015-18",
+				"id" : 900
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 51,
+				"country" : "Australia",
+				"fullName" : "Melbourne Cricket Ground",
+				"shortName" : "MCG",
+				"city" : "Melbourne"
+			},
+			"matchDate" : "2015-02-26T14:30:00+1100",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Sri Lanka",
+					"shortName" : "Sri Lanka",
+					"abbreviation" : "SL",
+					"primaryColor" : "02ABDC",
+					"secondaryColor" : "737D1D",
+					"id" : 13
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Bangladesh",
+					"shortName" : "Bangladesh",
+					"abbreviation" : "BAN",
+					"primaryColor" : "04A093",
+					"secondaryColor" : "04A093",
+					"id" : 22
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 19",
+			"matchId" : {
+				"name" : "cwc-2015-19",
+				"id" : 901
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 48,
+				"country" : "Australia",
+				"fullName" : "Sydney Cricket Ground",
+				"shortName" : "SCG",
+				"city" : "Sydney"
+			},
+			"matchDate" : "2015-02-27T14:30:00+1100",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "South Africa",
+					"shortName" : "South Africa",
+					"abbreviation" : "SA",
+					"primaryColor" : "FFCD00",
+					"secondaryColor" : "0E4D05",
+					"id" : 19
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "West Indies",
+					"shortName" : "West Indies",
+					"abbreviation" : "WI",
+					"primaryColor" : "8C0253",
+					"secondaryColor" : "5C1515",
+					"id" : 21
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 20",
+			"matchId" : {
+				"name" : "cwc-2015-20",
+				"id" : 902
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 90,
+				"country" : "New Zealand",
+				"fullName" : "Eden Park",
+				"shortName" : "Eden Park",
+				"city" : "Auckland"
+			},
+			"matchDate" : "2015-02-28T14:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Australia",
+					"shortName" : "Australia",
+					"abbreviation" : "AUS",
+					"primaryColor" : "7DBD18",
+					"secondaryColor" : "D6CF00",
+					"id" : 15
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "New Zealand",
+					"shortName" : "New Zealand",
+					"abbreviation" : "NZ",
+					"primaryColor" : "012247",
+					"secondaryColor" : "FAFAFA",
+					"id" : 16
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 21",
+			"matchId" : {
+				"name" : "cwc-2015-21",
+				"id" : 903
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 43,
+				"country" : "Australia",
+				"fullName" : "WACA",
+				"shortName" : "WACA",
+				"city" : "Perth"
+			},
+			"matchDate" : "2015-02-28T14:30:00+0800",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "India",
+					"shortName" : "India",
+					"abbreviation" : "IND",
+					"primaryColor" : "FD6205",
+					"secondaryColor" : "3A5BFD",
+					"id" : 14
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "United Arab Emirates",
+					"shortName" : "UAE",
+					"abbreviation" : "UAE",
+					"primaryColor" : "CE963F",
+					"secondaryColor" : "FFFFFF",
+					"id" : 155
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 22",
+			"matchId" : {
+				"name" : "cwc-2015-22",
+				"id" : 904
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 92,
+				"country" : "New Zealand",
+				"fullName" : "Wellington Regional Stadium",
+				"shortName" : "Wellington Regional Stadium",
+				"city" : "Wellington"
+			},
+			"matchDate" : "2015-03-01T11:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "England",
+					"shortName" : "England",
+					"abbreviation" : "ENG",
+					"primaryColor" : "023B7A",
+					"secondaryColor" : "E62102",
+					"id" : 11
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Sri Lanka",
+					"shortName" : "Sri Lanka",
+					"abbreviation" : "SL",
+					"primaryColor" : "02ABDC",
+					"secondaryColor" : "737D1D",
+					"id" : 13
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 23",
+			"matchId" : {
+				"name" : "cwc-2015-23",
+				"id" : 905
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 41,
+				"country" : "Australia",
+				"fullName" : "The Gabba",
+				"shortName" : "Brisbane Cricket Ground",
+				"city" : "Brisbane"
+			},
+			"matchDate" : "2015-03-01T13:30:00+1000",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Pakistan",
+					"shortName" : "Pakistan",
+					"abbreviation" : "PAK",
+					"primaryColor" : "084B01",
+					"secondaryColor" : "4B4407",
+					"id" : 20
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Zimbabwe",
+					"shortName" : "Zimbabwe",
+					"abbreviation" : "ZIM",
+					"primaryColor" : "546C87",
+					"secondaryColor" : "FF0000",
+					"id" : 18
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 24",
+			"matchId" : {
+				"name" : "cwc-2015-24",
+				"id" : 906
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 58,
+				"country" : "Australia",
+				"fullName" : "Manuka Oval",
+				"shortName" : "Manuka Oval",
+				"city" : "Canberra"
+			},
+			"matchDate" : "2015-03-03T14:30:00+1100",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "South Africa",
+					"shortName" : "South Africa",
+					"abbreviation" : "SA",
+					"primaryColor" : "FFCD00",
+					"secondaryColor" : "0E4D05",
+					"id" : 19
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Ireland",
+					"shortName" : "Ireland",
+					"abbreviation" : "IRE",
+					"primaryColor" : "467101",
+					"secondaryColor" : "FFFFFF",
+					"id" : 12
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 25",
+			"matchId" : {
+				"name" : "cwc-2015-25",
+				"id" : 907
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 91,
+				"country" : "New Zealand",
+				"fullName" : "McLean Park",
+				"shortName" : "McLean Park",
+				"city" : "Napier"
+			},
+			"matchDate" : "2015-03-04T14:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Pakistan",
+					"shortName" : "Pakistan",
+					"abbreviation" : "PAK",
+					"primaryColor" : "084B01",
+					"secondaryColor" : "4B4407",
+					"id" : 20
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "United Arab Emirates",
+					"shortName" : "UAE",
+					"abbreviation" : "UAE",
+					"primaryColor" : "CE963F",
+					"secondaryColor" : "FFFFFF",
+					"id" : 155
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 26",
+			"matchId" : {
+				"name" : "cwc-2015-26",
+				"id" : 908
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 43,
+				"country" : "Australia",
+				"fullName" : "WACA",
+				"shortName" : "WACA",
+				"city" : "Perth"
+			},
+			"matchDate" : "2015-03-04T14:30:00+0800",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Australia",
+					"shortName" : "Australia",
+					"abbreviation" : "AUS",
+					"primaryColor" : "7DBD18",
+					"secondaryColor" : "D6CF00",
+					"id" : 15
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Afghanistan",
+					"shortName" : "Afghanistan",
+					"abbreviation" : "AFG",
+					"primaryColor" : "000000",
+					"secondaryColor" : "000000",
+					"id" : 17
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 27",
+			"matchId" : {
+				"name" : "cwc-2015-27",
+				"id" : 909
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 93,
+				"country" : "New Zealand",
+				"fullName" : "Saxton Oval",
+				"shortName" : "Saxton Oval",
+				"city" : "Nelson"
+			},
+			"matchDate" : "2015-03-05T11:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Bangladesh",
+					"shortName" : "Bangladesh",
+					"abbreviation" : "BAN",
+					"primaryColor" : "04A093",
+					"secondaryColor" : "04A093",
+					"id" : 22
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Scotland",
+					"shortName" : "Scotland",
+					"abbreviation" : "SCO",
+					"primaryColor" : "003777",
+					"secondaryColor" : "FFFFFF",
+					"id" : 69
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 28",
+			"matchId" : {
+				"name" : "cwc-2015-28",
+				"id" : 910
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 43,
+				"country" : "Australia",
+				"fullName" : "WACA",
+				"shortName" : "WACA",
+				"city" : "Perth"
+			},
+			"matchDate" : "2015-03-06T14:30:00+0800",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "India",
+					"shortName" : "India",
+					"abbreviation" : "IND",
+					"primaryColor" : "FD6205",
+					"secondaryColor" : "3A5BFD",
+					"id" : 14
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "West Indies",
+					"shortName" : "West Indies",
+					"abbreviation" : "WI",
+					"primaryColor" : "8C0253",
+					"secondaryColor" : "5C1515",
+					"id" : 21
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 29",
+			"matchId" : {
+				"name" : "cwc-2015-29",
+				"id" : 911
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 90,
+				"country" : "New Zealand",
+				"fullName" : "Eden Park",
+				"shortName" : "Eden Park",
+				"city" : "Auckland"
+			},
+			"matchDate" : "2015-03-07T14:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "South Africa",
+					"shortName" : "South Africa",
+					"abbreviation" : "SA",
+					"primaryColor" : "FFCD00",
+					"secondaryColor" : "0E4D05",
+					"id" : 19
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Pakistan",
+					"shortName" : "Pakistan",
+					"abbreviation" : "PAK",
+					"primaryColor" : "084B01",
+					"secondaryColor" : "4B4407",
+					"id" : 20
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 30",
+			"matchId" : {
+				"name" : "cwc-2015-30",
+				"id" : 912
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 52,
+				"country" : "Australia",
+				"fullName" : "Bellerive Oval",
+				"shortName" : "Bellerive Oval",
+				"city" : "Hobart"
+			},
+			"matchDate" : "2015-03-07T14:30:00+1100",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Zimbabwe",
+					"shortName" : "Zimbabwe",
+					"abbreviation" : "ZIM",
+					"primaryColor" : "546C87",
+					"secondaryColor" : "FF0000",
+					"id" : 18
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Ireland",
+					"shortName" : "Ireland",
+					"abbreviation" : "IRE",
+					"primaryColor" : "467101",
+					"secondaryColor" : "FFFFFF",
+					"id" : 12
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 31",
+			"matchId" : {
+				"name" : "cwc-2015-31",
+				"id" : 913
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 91,
+				"country" : "New Zealand",
+				"fullName" : "McLean Park",
+				"shortName" : "McLean Park",
+				"city" : "Napier"
+			},
+			"matchDate" : "2015-03-08T11:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "New Zealand",
+					"shortName" : "New Zealand",
+					"abbreviation" : "NZ",
+					"primaryColor" : "012247",
+					"secondaryColor" : "FAFAFA",
+					"id" : 16
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Afghanistan",
+					"shortName" : "Afghanistan",
+					"abbreviation" : "AFG",
+					"primaryColor" : "000000",
+					"secondaryColor" : "000000",
+					"id" : 17
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 32",
+			"matchId" : {
+				"name" : "cwc-2015-32",
+				"id" : 914
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 48,
+				"country" : "Australia",
+				"fullName" : "Sydney Cricket Ground",
+				"shortName" : "SCG",
+				"city" : "Sydney"
+			},
+			"matchDate" : "2015-03-08T14:30:00+1100",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Australia",
+					"shortName" : "Australia",
+					"abbreviation" : "AUS",
+					"primaryColor" : "7DBD18",
+					"secondaryColor" : "D6CF00",
+					"id" : 15
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Sri Lanka",
+					"shortName" : "Sri Lanka",
+					"abbreviation" : "SL",
+					"primaryColor" : "02ABDC",
+					"secondaryColor" : "737D1D",
+					"id" : 13
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 33",
+			"matchId" : {
+				"name" : "cwc-2015-33",
+				"id" : 915
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 42,
+				"country" : "Australia",
+				"fullName" : "Adelaide Oval",
+				"shortName" : "Adelaide Oval",
+				"city" : "Adelaide"
+			},
+			"matchDate" : "2015-03-09T14:00:00+1030",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "England",
+					"shortName" : "England",
+					"abbreviation" : "ENG",
+					"primaryColor" : "023B7A",
+					"secondaryColor" : "E62102",
+					"id" : 11
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Bangladesh",
+					"shortName" : "Bangladesh",
+					"abbreviation" : "BAN",
+					"primaryColor" : "04A093",
+					"secondaryColor" : "04A093",
+					"id" : 22
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 34",
+			"matchId" : {
+				"name" : "cwc-2015-34",
+				"id" : 916
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 95,
+				"country" : "New Zealand",
+				"fullName" : "Seddon Park",
+				"shortName" : "Seddon Park",
+				"city" : "Hamilton"
+			},
+			"matchDate" : "2015-03-10T14:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "India",
+					"shortName" : "India",
+					"abbreviation" : "IND",
+					"primaryColor" : "FD6205",
+					"secondaryColor" : "3A5BFD",
+					"id" : 14
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Ireland",
+					"shortName" : "Ireland",
+					"abbreviation" : "IRE",
+					"primaryColor" : "467101",
+					"secondaryColor" : "FFFFFF",
+					"id" : 12
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 35",
+			"matchId" : {
+				"name" : "cwc-2015-35",
+				"id" : 917
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 52,
+				"country" : "Australia",
+				"fullName" : "Bellerive Oval",
+				"shortName" : "Bellerive Oval",
+				"city" : "Hobart"
+			},
+			"matchDate" : "2015-03-11T14:30:00+1100",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Sri Lanka",
+					"shortName" : "Sri Lanka",
+					"abbreviation" : "SL",
+					"primaryColor" : "02ABDC",
+					"secondaryColor" : "737D1D",
+					"id" : 13
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Scotland",
+					"shortName" : "Scotland",
+					"abbreviation" : "SCO",
+					"primaryColor" : "003777",
+					"secondaryColor" : "FFFFFF",
+					"id" : 69
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 36",
+			"matchId" : {
+				"name" : "cwc-2015-36",
+				"id" : 918
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 92,
+				"country" : "New Zealand",
+				"fullName" : "Wellington Regional Stadium",
+				"shortName" : "Wellington Regional Stadium",
+				"city" : "Wellington"
+			},
+			"matchDate" : "2015-03-12T14:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "South Africa",
+					"shortName" : "South Africa",
+					"abbreviation" : "SA",
+					"primaryColor" : "FFCD00",
+					"secondaryColor" : "0E4D05",
+					"id" : 19
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "United Arab Emirates",
+					"shortName" : "UAE",
+					"abbreviation" : "UAE",
+					"primaryColor" : "CE963F",
+					"secondaryColor" : "FFFFFF",
+					"id" : 155
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 37",
+			"matchId" : {
+				"name" : "cwc-2015-37",
+				"id" : 919
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 95,
+				"country" : "New Zealand",
+				"fullName" : "Seddon Park",
+				"shortName" : "Seddon Park",
+				"city" : "Hamilton"
+			},
+			"matchDate" : "2015-03-13T14:00:00+1300",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Bangladesh",
+					"shortName" : "Bangladesh",
+					"abbreviation" : "BAN",
+					"primaryColor" : "04A093",
+					"secondaryColor" : "04A093",
+					"id" : 22
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "New Zealand",
+					"shortName" : "New Zealand",
+					"abbreviation" : "NZ",
+					"primaryColor" : "012247",
+					"secondaryColor" : "FAFAFA",
+					"id" : 16
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 38",
+			"matchId" : {
+				"name" : "cwc-2015-38",
+				"id" : 920
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 48,
+				"country" : "Australia",
+				"fullName" : "Sydney Cricket Ground",
+				"shortName" : "SCG",
+				"city" : "Sydney"
+			},
+			"matchDate" : "2015-03-13T14:30:00+1100",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "England",
+					"shortName" : "England",
+					"abbreviation" : "ENG",
+					"primaryColor" : "023B7A",
+					"secondaryColor" : "E62102",
+					"id" : 11
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Afghanistan",
+					"shortName" : "Afghanistan",
+					"abbreviation" : "AFG",
+					"primaryColor" : "000000",
+					"secondaryColor" : "000000",
+					"id" : 17
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 39",
+			"matchId" : {
+				"name" : "cwc-2015-39",
+				"id" : 921
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 90,
+				"country" : "New Zealand",
+				"fullName" : "Eden Park",
+				"shortName" : "Eden Park",
+				"city" : "Auckland"
+			},
+			"matchDate" : "2015-03-14T14:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "India",
+					"shortName" : "India",
+					"abbreviation" : "IND",
+					"primaryColor" : "FD6205",
+					"secondaryColor" : "3A5BFD",
+					"id" : 14
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Zimbabwe",
+					"shortName" : "Zimbabwe",
+					"abbreviation" : "ZIM",
+					"primaryColor" : "546C87",
+					"secondaryColor" : "FF0000",
+					"id" : 18
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 40",
+			"matchId" : {
+				"name" : "cwc-2015-40",
+				"id" : 922
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 52,
+				"country" : "Australia",
+				"fullName" : "Bellerive Oval",
+				"shortName" : "Bellerive Oval",
+				"city" : "Hobart"
+			},
+			"matchDate" : "2015-03-14T14:30:00+1100",
+			"groupName" : "Pool A",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Australia",
+					"shortName" : "Australia",
+					"abbreviation" : "AUS",
+					"primaryColor" : "7DBD18",
+					"secondaryColor" : "D6CF00",
+					"id" : 15
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Scotland",
+					"shortName" : "Scotland",
+					"abbreviation" : "SCO",
+					"primaryColor" : "003777",
+					"secondaryColor" : "FFFFFF",
+					"id" : 69
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 41",
+			"matchId" : {
+				"name" : "cwc-2015-41",
+				"id" : 923
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 91,
+				"country" : "New Zealand",
+				"fullName" : "McLean Park",
+				"shortName" : "McLean Park",
+				"city" : "Napier"
+			},
+			"matchDate" : "2015-03-15T11:00:00+1300",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "West Indies",
+					"shortName" : "West Indies",
+					"abbreviation" : "WI",
+					"primaryColor" : "8C0253",
+					"secondaryColor" : "5C1515",
+					"id" : 21
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "United Arab Emirates",
+					"shortName" : "UAE",
+					"abbreviation" : "UAE",
+					"primaryColor" : "CE963F",
+					"secondaryColor" : "FFFFFF",
+					"id" : 155
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Match 42",
+			"matchId" : {
+				"name" : "cwc-2015-42",
+				"id" : 924
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 42,
+				"country" : "Australia",
+				"fullName" : "Adelaide Oval",
+				"shortName" : "Adelaide Oval",
+				"city" : "Adelaide"
+			},
+			"matchDate" : "2015-03-15T14:00:00+1030",
+			"groupName" : "Pool B",
+			"team1" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Pakistan",
+					"shortName" : "Pakistan",
+					"abbreviation" : "PAK",
+					"primaryColor" : "084B01",
+					"secondaryColor" : "4B4407",
+					"id" : 20
+				}
+			},
+			"team2" : {
+				"team" : {
+					"type" : "m",
+					"fullName" : "Ireland",
+					"shortName" : "Ireland",
+					"abbreviation" : "IRE",
+					"primaryColor" : "467101",
+					"secondaryColor" : "FFFFFF",
+					"id" : 12
+				}
+			},
+			"matchState" : "U"
+		}, {
+			"description" : "Quarter Final 1",
+			"matchId" : {
+				"name" : "cwc-2015-43",
+				"id" : 925
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 48,
+				"country" : "Australia",
+				"fullName" : "Sydney Cricket Ground",
+				"shortName" : "SCG",
+				"city" : "Sydney"
+			},
+			"matchDate" : "2015-03-18T14:30:00+1100",
+			"groupName" : "Knockouts",
+			"matchState" : "U"
+		}, {
+			"description" : "Quarter Final 2",
+			"matchId" : {
+				"name" : "cwc-2015-44",
+				"id" : 926
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 51,
+				"country" : "Australia",
+				"fullName" : "Melbourne Cricket Ground",
+				"shortName" : "MCG",
+				"city" : "Melbourne"
+			},
+			"matchDate" : "2015-03-19T14:30:00+1100",
+			"groupName" : "Knockouts",
+			"matchState" : "U"
+		}, {
+			"description" : "Quarter Final 3",
+			"matchId" : {
+				"name" : "cwc-2015-45",
+				"id" : 927
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 42,
+				"country" : "Australia",
+				"fullName" : "Adelaide Oval",
+				"shortName" : "Adelaide Oval",
+				"city" : "Adelaide"
+			},
+			"matchDate" : "2015-03-20T14:00:00+1030",
+			"groupName" : "Knockouts",
+			"matchState" : "U"
+		}, {
+			"description" : "Quarter Final 4",
+			"matchId" : {
+				"name" : "cwc-2015-46",
+				"id" : 928
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 92,
+				"country" : "New Zealand",
+				"fullName" : "Wellington Regional Stadium",
+				"shortName" : "Wellington Regional Stadium",
+				"city" : "Wellington"
+			},
+			"matchDate" : "2015-03-21T14:00:00+1300",
+			"groupName" : "Knockouts",
+			"matchState" : "U"
+		}, {
+			"description" : "Semi Final 1",
+			"matchId" : {
+				"name" : "cwc-2015-47",
+				"id" : 929
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 90,
+				"country" : "New Zealand",
+				"fullName" : "Eden Park",
+				"shortName" : "Eden Park",
+				"city" : "Auckland"
+			},
+			"matchDate" : "2015-03-24T14:00:00+1300",
+			"groupName" : "Knockouts",
+			"matchState" : "U"
+		}, {
+			"description" : "Semi Final 2",
+			"matchId" : {
+				"name" : "cwc-2015-48",
+				"id" : 930
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 48,
+				"country" : "Australia",
+				"fullName" : "Sydney Cricket Ground",
+				"shortName" : "SCG",
+				"city" : "Sydney"
+			},
+			"matchDate" : "2015-03-26T14:30:00+1100",
+			"groupName" : "Knockouts",
+			"matchState" : "U"
+		}, {
+			"description" : "Final",
+			"matchId" : {
+				"name" : "cwc-2015-49",
+				"id" : 931
+			},
+			"matchType" : "ODI",
+			"venue" : {
+				"id" : 51,
+				"country" : "Australia",
+				"fullName" : "Melbourne Cricket Ground",
+				"shortName" : "MCG",
+				"city" : "Melbourne"
+			},
+			"matchDate" : "2015-03-29T14:30:00+1100",
+			"groupName" : "Knockouts",
+			"matchState" : "U"
+		}
+	]
+}

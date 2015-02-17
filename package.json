@@ -1,0 +1,14 @@
+{
+  "name": "parse-data-uploader",
+  "version": "1.0.0",
+  "description": "simple project to upload json format data into parse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nirmal patel",
+  "license": "MIT",
+  "devDependencies": {
+    "global-tunnel": "^1.2.0"
+  }
+}
