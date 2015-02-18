@@ -2,11 +2,10 @@ var https = require('https');
 
 var _ = require('underscore');
 
-
+var Promise = require('promise');
 
 /*
 var globalTunnel = require('global-tunnel');
-
 
 globalTunnel.initialize({
 host: 'localhost',
@@ -25,46 +24,47 @@ var wc = {
 };
 
 var addToParse = function (dataObj) {
-    var post_data = JSON.stringify(dataObj);
-    var post_options = {
-        hostname : 'api.parse.com',
-        port : 443,
-        path : '/1/classes/'+this.className,
-        method : 'POST',
-        headers : {
-            'X-Parse-Application-Id' : 'chawe9LzqdIrsoo20Yz092PUwsw8Ce73lEh4mP9d',
-            'X-Parse-REST-API-Key' : 'jTqEWDOcz8OXrIF2YkxltyagFYSLBHdXu3MRa77k',
-            'Content-Type' : 'application/json',
-            'Content-Length' : Buffer.byteLength(post_data),
-        }
-    };
+    return new Promise (function(resolve, reject) {
+        var post_data = JSON.stringify(dataObj);
+        var post_options = {
+            hostname : 'api.parse.com',
+            port : 443,
+            path : '/1/classes/'+this.className,
+            method : 'POST',
+            headers : {
+                'X-Parse-Application-Id' : 'chawe9LzqdIrsoo20Yz092PUwsw8Ce73lEh4mP9d',
+                'X-Parse-REST-API-Key' : 'jTqEWDOcz8OXrIF2YkxltyagFYSLBHdXu3MRa77k',
+                'Content-Type' : 'application/json',
+                'Content-Length' : Buffer.byteLength(post_data),
+            }
+        };
 
-    // Set up the request
-    var post_req = https.request(post_options, function (res) {
-            this.obj = dataObj;
-            this.str = '';
-            res.setEncoding('utf8');
-        res.on('data', function (chunk) {
-            this.str += chunk;
-        }.bind(this));
-        res.on('end', function () {
-            var jsonRes = JSON.parse(this.str);
-            this.obj.objectId = jsonRes.objectId;
-            console.log("after:", this.obj);
-        }.bind(this));
-        });
+        // Set up the request
+        var post_req = https.request(post_options, function (res) {
+                this.obj = dataObj;
+                this.str = '';
+                res.setEncoding('utf8');
+            res.on('data', function (chunk) {
+                this.str += chunk;
+            }.bind(this));
+            res.on('end', function () {
+                var jsonRes = JSON.parse(this.str);
+                this.obj.objectId = jsonRes.objectId;
+                //console.log("after:", this.obj);
+                resolve(this.obj);
+            }.bind(this));
+            });
 
-    // post the data
-    post_req.write(post_data);
-    post_req.end();
+        // post the data
+        post_req.write(post_data);
+        post_req.end();
+    });
 };
 
 var seasonObj = {
     icc_id : wc.tournamentId,
     name : wc.tournamentName
 };
-this.className = 'Season';
-[seasonObj].forEach(addToParse, this);
 
 var totalMatches = wc.schedule.length;
 var venues = [];
@@ -132,7 +132,15 @@ for(var i=0; i < totalMatches; i++) {
         }
 }
 
-this.className = 'Venue';
-venues.forEach(addToParse, this);
 
-console.log(venues);
+this.className = 'Season';
+addToParse(seasonObj)
+    .then(function(){
+        this.className = 'Venue';
+        return Promise.all(
+            venues.forEach(addToParse, this)
+        );
+    }).then(function(){
+        console.log("Finally:", venues);
+    });
+
