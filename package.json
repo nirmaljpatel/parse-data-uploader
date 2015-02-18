@@ -9,6 +9,8 @@
   "author": "nirmal patel",
   "license": "MIT",
   "devDependencies": {
-    "global-tunnel": "^1.2.0"
+    "global-tunnel": "^1.2.0",
+    "promise": "^6.1.0",
+    "underscore": "^1.7.0"
   }
 }
