@@ -139,37 +139,33 @@ for (var i = 0; i < totalMatches; i++) {
 	}
 }
 
-var addRelationsToMatch = function (match) {
-	match.venue = {
+var addParseRelationPointer = function(ptrToClassName, arrToObjIds){
+	var relation =  {
 		"__op" : "AddRelation",
-		"objects" : [
-			{
-				"__type" : "Pointer",
-				"className" : "Venues",
-				"objectId" : (_.findWhere(venues, {venueId: match.venueId})).objectId
-			}
-		]
+		"objects" : []
 	};
 	
+	var totalIds = arrToObjIds.length;
+	for (var i=0; i<= totalIds; i++){
+		var ptr = {
+			"__type" : "Pointer",
+			"className" : ptrToClassName,
+			"objectId" : arrToObjIds[i]
+		};	
+		relation.objects.push(ptr);
+	}
+	return relation;
+};
+
+var addRelationsToMatch = function (match) {
+	var venueObjId = (_.findWhere(venues, {venueId: match.venueId})).objectId
+	match.venue = addParseRelationPointer("Venues", [venueObjId]) ;
+	
 	if(match.team1) {
-		team1ObjId = (_.findWhere(teams, {teamId: match.team1})).objectId;
-		team2ObjId = (_.findWhere(teams, {teamId: match.team2})).objectId;
+		var team1ObjId = (_.findWhere(teams, {teamId: match.team1})).objectId;
+		var team2ObjId = (_.findWhere(teams, {teamId: match.team2})).objectId;
 		
-		match.teams = {
-			"__op" : "AddRelation",
-			"objects" : [
-			{
-				"__type" : "Pointer",
-				"className" : "Teams",
-				"objectId" : team1ObjId
-			},
-			{
-				"__type" : "Pointer",
-				"className" : "Teams",
-				"objectId" : team2ObjId
-			}
-			]
-		};
+		match.teams = addParseRelationPointer("Teams", [team1ObjId, team2ObjId]);
 	}
 	//console.log("After addRelations: ", match);
 }
