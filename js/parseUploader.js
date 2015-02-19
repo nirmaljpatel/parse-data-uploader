@@ -4,12 +4,14 @@ var _ = require('underscore');
 var Promise = require('promise');
 
 //To tunnel via CNTLM
+/*
 var globalTunnel = require('global-tunnel');
 globalTunnel.initialize({
 	host : 'localhost',
 	port : 3128,
 	sockets : 50 // optional pool size for each http and https
 });
+*/
 
 //Easiest way to read in JSON files
 var scheduleJson = require("../data/schedule.json");
@@ -146,7 +148,7 @@ var addParseRelationPointer = function (ptrToClassName, arrToObjIds) {
 	};
 
 	var totalIds = arrToObjIds.length;
-	for (var i = 0; i <= totalIds; i++) {
+	for (var i = 0; i < totalIds; i++) {
 		var ptr = {
 			"__type" : "Pointer",
 			"className" : ptrToClassName,
