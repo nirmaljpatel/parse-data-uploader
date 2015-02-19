@@ -139,63 +139,73 @@ for (var i = 0; i < totalMatches; i++) {
 	}
 }
 
-var addParseRelationPointer = function(ptrToClassName, arrToObjIds){
-	var relation =  {
+var addParseRelationPointer = function (ptrToClassName, arrToObjIds) {
+	var relation = {
 		"__op" : "AddRelation",
 		"objects" : []
 	};
-	
+
 	var totalIds = arrToObjIds.length;
-	for (var i=0; i<= totalIds; i++){
+	for (var i = 0; i <= totalIds; i++) {
 		var ptr = {
 			"__type" : "Pointer",
 			"className" : ptrToClassName,
 			"objectId" : arrToObjIds[i]
-		};	
+		};
 		relation.objects.push(ptr);
 	}
 	return relation;
 };
 
 var addRelationsToMatch = function (match) {
-	var venueObjId = (_.findWhere(venues, {venueId: match.venueId})).objectId
-	match.venue = addParseRelationPointer("Venues", [venueObjId]) ;
-	
-	if(match.team1) {
-		var team1ObjId = (_.findWhere(teams, {teamId: match.team1})).objectId;
-		var team2ObjId = (_.findWhere(teams, {teamId: match.team2})).objectId;
-		
+	var venueObjId = (_.findWhere(venues, {
+			venueId : match.venueId
+		})).objectId
+	match.venue = addParseRelationPointer("Venues", [venueObjId]);
+
+	if (match.team1) {
+		var team1ObjId = (_.findWhere(teams, {
+				teamId : match.team1
+			})).objectId;
+		var team2ObjId = (_.findWhere(teams, {
+				teamId : match.team2
+			})).objectId;
+
 		match.teams = addParseRelationPointer("Teams", [team1ObjId, team2ObjId]);
 	}
 	//console.log("After addRelations: ", match);
 }
 
 Promise.all(function (seasonObj) {
+	console.log("Adding Seasons");
 	this.className = 'Seasons';
 	return ([seasonObj].map(addToParse, this));
-}
-	(seasonObj)).then(function (seasons) {
-	console.log("Then... updated Seasons:", seasons);
+}(seasonObj))
+.then(function (seasons) {
+	console.log("...Then... updated Seasons:", seasons);
 }).then(function () {
 	console.log("Then... adding Venues");
 	this.className = 'Venues';
 	return Promise.all(
 		venues.map(addToParse, this));
 }).then(function (venues) {
-	console.log("Then... updated Venues:", venues);
+	console.log("...Then... updated Venues:", venues);
 }).then(function () {
+	console.log("Then... adding Teams");
 	this.className = 'Teams';
 	return Promise.all(
 		teams.map(addToParse, this));
 }).then(function (teams) {
-	console.log("Then... updated Teams:", teams);
+	console.log("...Then... updated Teams:", teams);
 }).then(function () {
+	console.log("Then... Updating Matches with relations");
 	matches.forEach(addRelationsToMatch);
+	console.log("...Then adding Matches");
 	this.className = 'Matches';
 	return Promise.all(
 		matches.map(addToParse, this));
-}).then(function(){
-	console.log("Then... updated Matches:", matches);
+}).then(function () {
+	console.log("...Then... updated Matches:", matches);
 }).catch (function (err) {
 	console.log("Error occurred...", err);
 })
