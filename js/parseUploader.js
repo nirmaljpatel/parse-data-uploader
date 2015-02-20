@@ -1,8 +1,7 @@
-var https = require('https');
 var _ = require('underscore');
-
 var Promise = require('promise');
 
+var parseUtils = require('./parseUtils.js');
 //To tunnel via CNTLM
 /*
 var globalTunnel = require('global-tunnel');
@@ -22,50 +21,6 @@ var wc = {
 	tournamentName : scheduleJson.tournamentId.name,
 	schedule : scheduleJson.schedule,
 	squad : squadJson.squads
-};
-
-function addToParse(dataObj) {
-	return new Promise(function (resolve, reject) {
-		//console.log("Inside Promise:", this.className);
-		var post_data = JSON.stringify(dataObj);
-		var post_options = {
-			hostname : 'api.parse.com',
-			port : 443,
-			path : '/1/classes/' + this.className,
-			method : 'POST',
-			headers : {
-				'X-Parse-Application-Id' : 'chawe9LzqdIrsoo20Yz092PUwsw8Ce73lEh4mP9d',
-				'X-Parse-REST-API-Key' : 'jTqEWDOcz8OXrIF2YkxltyagFYSLBHdXu3MRa77k',
-				'Content-Type' : 'application/json',
-				'Content-Length' : Buffer.byteLength(post_data),
-			}
-		};
-
-		// Set up the request
-		var post_req = https.request(post_options, function (res) {
-				this.obj = dataObj;
-				this.str = '';
-				res.setEncoding('utf8');
-				res.on('data', function (chunk) {
-					this.str += chunk;
-				}
-					.bind(this));
-				res.on('end', function () {
-					var jsonRes = JSON.parse(this.str);
-					this.obj.objectId = jsonRes.objectId;
-					console.log("After addToParse:", this.obj);
-					resolve(this.obj);
-				}
-					.bind(this));
-				res.on('error', function (err) {
-					reject(err);
-				});
-			});
-
-		// post the data
-		post_req.write(post_data);
-		post_req.end();
-	});
 };
 
 var seasonObj = {
@@ -178,10 +133,14 @@ var addRelationsToMatch = function (match) {
 	//console.log("After addRelations: ", match);
 }
 
+var getObjId = function(obj){
+		return obj.objectId?obj.objectId:null;
+};
+
 Promise.all(function (seasonObj) {
 	console.log("Adding Seasons");
 	this.className = 'Seasons';
-	return ([seasonObj].map(addToParse, this));
+	return ([seasonObj].map(parseUtils.add, this));
 }(seasonObj))
 .then(function (seasons) {
 	console.log("...Then... updated Seasons:", seasons);
@@ -189,14 +148,14 @@ Promise.all(function (seasonObj) {
 	console.log("Then... adding Venues");
 	this.className = 'Venues';
 	return Promise.all(
-		venues.map(addToParse, this));
+		venues.map(parseUtils.add, this));
 }).then(function (venues) {
 	console.log("...Then... updated Venues:", venues);
 }).then(function () {
 	console.log("Then... adding Teams");
 	this.className = 'Teams';
 	return Promise.all(
-		teams.map(addToParse, this));
+		teams.map(parseUtils.add, this));
 }).then(function (teams) {
 	console.log("...Then... updated Teams:", teams);
 }).then(function () {
@@ -205,9 +164,15 @@ Promise.all(function (seasonObj) {
 	console.log("...Then adding Matches");
 	this.className = 'Matches';
 	return Promise.all(
-		matches.map(addToParse, this));
+		matches.map(parseUtils.add, this));
 }).then(function () {
 	console.log("...Then... updated Matches:", matches);
+}).then(function(){
+		matchObjIds = matches.map(getObjId);
+		console.log("...Then... match ObjIds:",matchObjIds);
+		seasonObj.matches = addParseRelationPointer("Matches", matchObjIds);
+		this.className = 'Seasons';
+		[seasonObj].map(parseUtils.update, this);
 }).catch (function (err) {
 	console.log("Error occurred...", err);
 })
