@@ -117,8 +117,12 @@ var addParseRelationPointer = function (ptrToClassName, arrToObjIds) {
 var addRelationsToMatch = function (match) {
 	var venueObjId = (_.findWhere(venues, {
 			venueId : match.venueId
-		})).objectId
+		})).objectId;
 	match.venue = addParseRelationPointer("Venues", [venueObjId]);
+	
+	var seasonObjId = seasonObj.objectId;
+	match.season = addParseRelationPointer("Seasons", [seasonObjId]);
+	
 
 	if (match.team1) {
 		var team1ObjId = (_.findWhere(teams, {
