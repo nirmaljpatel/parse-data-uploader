@@ -2,6 +2,8 @@ var _ = require('underscore');
 var Promise = require('promise');
 
 var parseUtils = require('./parseUtils.js');
+var config = require('./config.json');
+
 //To tunnel via CNTLM
 /*
 var globalTunnel = require('global-tunnel');
@@ -118,10 +120,10 @@ var addRelationsToMatch = function (match) {
 	var venueObjId = (_.findWhere(venues, {
 			venueId : match.venueId
 		})).objectId;
-	match.venue = addParseRelationPointer("Venues", [venueObjId]);
+	match.venue = addParseRelationPointer(config.classNames.venue, [venueObjId]);
 	
 	var seasonObjId = seasonObj.objectId;
-	match.season = addParseRelationPointer("Seasons", [seasonObjId]);
+	match.season = addParseRelationPointer(config.classNames.season, [seasonObjId]);
 	
 
 	if (match.team1) {
@@ -132,7 +134,7 @@ var addRelationsToMatch = function (match) {
 				teamId : match.team2
 			})).objectId;
 
-		match.teams = addParseRelationPointer("Teams", [team1ObjId, team2ObjId]);
+		match.teams = addParseRelationPointer(config.classNames.team, [team1ObjId, team2ObjId]);
 	}
 	//console.log("After addRelations: ", match);
 }
@@ -143,21 +145,21 @@ var getObjId = function(obj){
 
 Promise.all(function (seasonObj) {
 	console.log("Adding Seasons");
-	this.className = 'Seasons';
+	this.className = config.classNames.season;
 	return ([seasonObj].map(parseUtils.add, this));
 }(seasonObj))
 .then(function (seasons) {
 	console.log("...Then... updated Seasons:", seasons);
 }).then(function () {
 	console.log("Then... adding Venues");
-	this.className = 'Venues';
+	this.className = config.classNames.venue;
 	return Promise.all(
 		venues.map(parseUtils.add, this));
 }).then(function (venues) {
 	console.log("...Then... updated Venues:", venues);
 }).then(function () {
 	console.log("Then... adding Teams");
-	this.className = 'Teams';
+	this.className = config.classNames.team;
 	return Promise.all(
 		teams.map(parseUtils.add, this));
 }).then(function (teams) {
@@ -166,7 +168,7 @@ Promise.all(function (seasonObj) {
 	console.log("Then... Updating Matches with relations");
 	matches.forEach(addRelationsToMatch);
 	console.log("...Then adding Matches");
-	this.className = 'Matches';
+	this.className = config.classNames.match;
 	return Promise.all(
 		matches.map(parseUtils.add, this));
 }).then(function () {
@@ -174,8 +176,8 @@ Promise.all(function (seasonObj) {
 }).then(function(){
 		matchObjIds = matches.map(getObjId);
 		console.log("...Then... match ObjIds:",matchObjIds);
-		seasonObj.matches = addParseRelationPointer("Matches", matchObjIds);
-		this.className = 'Seasons';
+		seasonObj.matches = addParseRelationPointer(config.classNames.match, matchObjIds);
+		this.className = config.classNames.season;
 		[seasonObj].map(parseUtils.update, this);
 }).catch (function (err) {
 	console.log("Error occurred...", err);

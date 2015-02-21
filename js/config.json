@@ -1,0 +1,10 @@
+{
+    "parseAppId" : "7SwbBY0RgSwVwwfaVbR74bfCZhsb8je5VSnh3jiK",
+    "parseRestKey" : "axwpI4HzyLvRWglyycZCQhG2D2ddogsclJSgziKV",
+    "classNames" : {
+        "season" : "season",
+        "match" : "match",
+        "team" : "team",
+        "venue" : "venue"
+    }
+}

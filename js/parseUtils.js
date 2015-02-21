@@ -1,12 +1,13 @@
 var Promise = require('promise');
 var https = require('https');
 
+var config = require('./config.json');
 var post_options = {
 			hostname : 'api.parse.com',
 			port : 443,
 			headers : {
-				'X-Parse-Application-Id' : 'chawe9LzqdIrsoo20Yz092PUwsw8Ce73lEh4mP9d',
-				'X-Parse-REST-API-Key' : 'jTqEWDOcz8OXrIF2YkxltyagFYSLBHdXu3MRa77k',
+				'X-Parse-Application-Id' : config.parseAppId,
+				'X-Parse-REST-API-Key' : config.parseRestKey,
 				'Content-Type' : 'application/json',
 			}
 		};
@@ -36,6 +37,7 @@ exports.add = function(dataObj) {
 				}
 					.bind(this));
 				res.on('error', function (err) {
+					console.log(err);
 					reject(err);
 				});
 			});
@@ -70,6 +72,7 @@ exports.update = function(dataObj){
 			}
 			.bind(this));
 			res.on('error', function (err) {
+				console.log(err);				
 				reject(err);
 			});
 		});
