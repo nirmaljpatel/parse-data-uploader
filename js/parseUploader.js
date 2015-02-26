@@ -120,7 +120,8 @@ var addRelatedDataToMatch = function (match) {
 	var venueObj = (_.findWhere(venues, {
 			venueId : match.venueId
 		}));
-	match.venue = addParseRelationPointer(config.classNames.venue, [venueObj]);
+	//match.venue = addParseRelationPointer(config.classNames.venue, [venueObj]);
+	match.venue = [venueObj];
 	
 	match.season = addParseRelationPointer(config.classNames.season, [seasonObj]);
 	
@@ -133,7 +134,8 @@ var addRelatedDataToMatch = function (match) {
 				teamId : match.team2
 			}));
 
-		match.teams = addParseRelationPointer(config.classNames.team, [team1Obj, team2Obj]);
+		//match.teams = addParseRelationPointer(config.classNames.team, [team1Obj, team2Obj]);
+		match.teams = [team1Obj, team2Obj];
 	}
 	//console.log("After addRelations: ", match);
 }
