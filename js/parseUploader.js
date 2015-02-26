@@ -116,7 +116,7 @@ var addParseRelationPointer = function (ptrToClassName, arrToObjs) {
 	return relation;
 };
 
-var addRelationsToMatch = function (match) {
+var addRelatedDataToMatch = function (match) {
 	var venueObj = (_.findWhere(venues, {
 			venueId : match.venueId
 		}));
@@ -165,7 +165,7 @@ Promise.all(function (seasonObj) {
 	console.log("...Then... updated Teams:", teams);
 }).then(function () {
 	console.log("Then... Updating Matches with relations");
-	matches.forEach(addRelationsToMatch);
+	matches.forEach(addRelatedDataToMatch);
 	console.log("...Then adding Matches");
 	this.className = config.classNames.match;
 	return Promise.all(
