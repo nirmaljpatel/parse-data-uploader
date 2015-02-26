@@ -98,18 +98,18 @@ for (var i = 0; i < totalMatches; i++) {
 	}
 }
 
-var addParseRelationPointer = function (ptrToClassName, arrToObjIds) {
+var addParseRelationPointer = function (ptrToClassName, arrToObjs) {
 	var relation = {
 		"__op" : "AddRelation",
 		"objects" : []
 	};
 
-	var totalIds = arrToObjIds.length;
+	var totalIds = arrToObjs.length;
 	for (var i = 0; i < totalIds; i++) {
 		var ptr = {
 			"__type" : "Pointer",
 			"className" : ptrToClassName,
-			"objectId" : arrToObjIds[i]
+			"objectId" : arrToObjs[i].objectId
 		};
 		relation.objects.push(ptr);
 	}
@@ -117,24 +117,23 @@ var addParseRelationPointer = function (ptrToClassName, arrToObjIds) {
 };
 
 var addRelationsToMatch = function (match) {
-	var venueObjId = (_.findWhere(venues, {
+	var venueObj = (_.findWhere(venues, {
 			venueId : match.venueId
-		})).objectId;
-	match.venue = addParseRelationPointer(config.classNames.venue, [venueObjId]);
+		}));
+	match.venue = addParseRelationPointer(config.classNames.venue, [venueObj]);
 	
-	var seasonObjId = seasonObj.objectId;
-	match.season = addParseRelationPointer(config.classNames.season, [seasonObjId]);
+	match.season = addParseRelationPointer(config.classNames.season, [seasonObj]);
 	
 
 	if (match.team1) {
-		var team1ObjId = (_.findWhere(teams, {
+		var team1Obj = (_.findWhere(teams, {
 				teamId : match.team1
-			})).objectId;
-		var team2ObjId = (_.findWhere(teams, {
+			}));
+		var team2Obj = (_.findWhere(teams, {
 				teamId : match.team2
-			})).objectId;
+			}));
 
-		match.teams = addParseRelationPointer(config.classNames.team, [team1ObjId, team2ObjId]);
+		match.teams = addParseRelationPointer(config.classNames.team, [team1Obj, team2Obj]);
 	}
 	//console.log("After addRelations: ", match);
 }
@@ -174,9 +173,9 @@ Promise.all(function (seasonObj) {
 }).then(function () {
 	console.log("...Then... updated Matches:", matches);
 }).then(function(){
-		matchObjIds = matches.map(getObjId);
-		console.log("...Then... match ObjIds:",matchObjIds);
-		seasonObj.matches = addParseRelationPointer(config.classNames.match, matchObjIds);
+		//matchObjIds = matches.map(getObjId);
+		//console.log("...Then... match ObjIds:",matchObjIds);
+		seasonObj.matches = addParseRelationPointer(config.classNames.match, matches);
 		this.className = config.classNames.season;
 		[seasonObj].map(parseUtils.update, this);
 }).catch (function (err) {
